@@ -14,6 +14,18 @@ body {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+    /* remove o sublinhado */
+    color: inherit;
+    /* herda a cor do elemento pai */
+}
+
+a:visited {
+    color: inherit;
+    /* mantém a mesma cor mesmo após visitado */
+}
+
 /* 3 Divs Orgânicas Estáticas com Iluminação */
 .organic-bg {
     position: fixed;
