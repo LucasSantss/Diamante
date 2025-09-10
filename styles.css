@@ -93,12 +93,12 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px;
+    padding: 0px 50px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    margin: 20px;
+    margin: 20px 4%;
     position: relative;
     z-index: 10;
 }
