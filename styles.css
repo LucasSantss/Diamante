@@ -338,23 +338,23 @@ a:visited {
         flex-direction: column;
         justify-content: flex-start;
         top: 0;
-        width: 40%;
-        height: 90%;
+        width: 150px;
+        height: 850px;
         background: #F2C9C9;
         opacity: .90;
         border-radius: 25px;
-        clip-path: circle(7% at 48% 6%);
+        clip-path: circle(40px at 48% 50px);
         transition: 1s;
         left: 2%;
     }
 
     .navbar.active {
-        clip-path: circle(430px at 50% 44px);
+        clip-path: circle(430px at 50% 50px);
         pointer-events: all;
         transition: 2s;
         left: 2%;
         transition: 1s;
-        height: 50%;
+        height: 420px;
     }
 
     .nav-menu {
