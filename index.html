@@ -8,6 +8,7 @@
     <meta name="description" content="Site de apresentação com formas orgânicas e efeitos de iluminação">
     <link rel="icon" href="/images/logo.png" />
     <link rel="stylesheet" href="styles.css">
+    <!-- O script_melhorado.js injetará estilos dinâmicos, mas o styles.css ainda é necessário para estilos base -->
 </head>
 
 <body>
@@ -27,13 +28,14 @@
             <h1 class="hero-title">Diamante <br> Vidros & Espelhos</h1>
             <p class="hero-subtitle">Soluções personalizadas em vidros e espelhos, com inovação e acabamento impecável
             </p>
-            <button class="cta-button"><a href="https://vipp.link/diamantevidracaria"
-                    target="_blank">Explorar</a></button>
+            <!-- O botão CTA agora é um button puro para o efeito ripple funcionar corretamente -->
+            <a href="https://vipp.link/diamantevidracaria" target="_blank" class="cta-button">Explorar</a>
         </div>
     </header>
 
     <main>
 
+        <!-- Adicionado id="about" para navegação suave e ativa -->
         <section id="about" class="content-section">
             <div class="organic-bg organic-shape-1"></div>
             <div class="container">
@@ -45,6 +47,7 @@
             <div class="organic-bg organic-shape-3"></div>
         </section>
 
+        <!-- Adicionado id="services" para navegação suave e ativa -->
         <section id="services" class="content-section">
             <div class="container">
                 <h2>Serviços</h2>
@@ -69,6 +72,7 @@
             <div class="organic-bg organic-shape-2"></div>
         </section>
 
+        <!-- Adicionado id="contact" para navegação suave e ativa -->
         <section id="contact" class="content-section contact">
             <div class="container">
                 <h2>Contato</h2>
@@ -90,7 +94,9 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Inclua o script_melhorado.js no final do body para garantir que o DOM esteja carregado -->
+    <script src="script_melhorado.js"></script>
 </body>
 
 </html>
+

@@ -189,6 +189,7 @@ a:visited {
 }
 
 .cta-button {
+    display: block; /* Garante que o link ocupe toda a largura disponível */
     padding: 15px 40px;
     font-size: 1.2rem;
     font-weight: 600;
@@ -201,6 +202,9 @@ a:visited {
     position: relative;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    z-index: 2; /* Garante que o botão esteja acima de outros elementos */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+    text-decoration: none; /* Remove sublinhado padrão do link */
 }
 
 .cta-button:hover {
@@ -406,3 +410,79 @@ a:visited {
         height: 55%;
     }
 }
+
+/* Estilos adicionados para as melhorias do JavaScript */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(45deg, #A69C94, #F2C9C9);
+    z-index: 1000;
+    transition: width 0.1s ease;
+}
+
+/* Animações de entrada */
+.animate-prepare {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 800ms ease, transform 800ms ease;
+}
+
+.animate-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Link ativo na navegação */
+.nav-menu a.active {
+    color: #F2C9C9;
+    transform: translateY(-2px);
+}
+
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+.nav-menu a.active-link {
+    animation: linkPulse 0.5s ease;
+}
+
+@keyframes linkPulse {
+    0%, 100% { transform: translateY(-2px); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Efeito ripple para o botão CTA */
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Efeito de clique para cards */
+@keyframes cardPulse {
+    0% { transform: translateY(-15px) scale(1.02); }
+    50% { transform: translateY(-15px) scale(1.08); }
+    100% { transform: translateY(-15px) scale(1.02); }
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Otimizações para mobile */
+@media (max-width: 768px) {
+    .scroll-progress {
+        height: 2px;
+    }
+}
+
+
