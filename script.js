@@ -61,10 +61,10 @@ function initParallaxEffect() {
     let ticking = false;
     
     const parallaxElements = [
-        { selector: '.hero-content', intensity: CONFIG.parallaxIntensity },
-        { selector: '.organic-shape-1', intensity: CONFIG.parallaxIntensity * 0.5 },
-        { selector: '.organic-shape-2', intensity: CONFIG.parallaxIntensity * 0.3 },
-        { selector: '.organic-shape-3', intensity: CONFIG.parallaxIntensity * 0.7 }
+        //{ selector: '.hero-content', intensity: CONFIG.parallaxIntensity },
+        //{ selector: '.organic-shape-1', intensity: CONFIG.parallaxIntensity * 0.5 },
+        //{ selector: '.organic-shape-2', intensity: CONFIG.parallaxIntensity * 0.3 },
+        //{ selector: '.organic-shape-3', intensity: CONFIG.parallaxIntensity * 0.7 }
     ];
     
     function updateParallax() {
