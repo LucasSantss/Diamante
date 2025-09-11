@@ -89,3 +89,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Adicionar classe para indicar que o JavaScript está ativo
     document.body.classList.add('js-loaded');
 });
+
+//navbar @media
+const menu_btn = document.querySelector('.nav-brand');
+const nav = document.querySelector('.navbar');
+
+menu_btn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+})
