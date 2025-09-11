@@ -407,19 +407,10 @@ window.addEventListener('beforeunload', () => {
     console.log('🔷 Diamante Vidraçaria - Obrigado pela visita!');
 });
 
-// Tratamento de erros global
-window.addEventListener('error', (e) => {
-    console.warn('Erro capturado:', e.message);
-});
+//navbar @media
+const menu_btn = document.querySelector('.nav-brand');
+const nav = document.querySelector('.navbar');
 
-// ========================================
-// EXPORTAR PARA DEBUGGING (OPCIONAL)
-// ========================================
-if (typeof window !== 'undefined') {
-    window.DiamanteSite = {
-        config: CONFIG,
-        reinitialize: initializeWebsite,
-        version: '2.0.0'
-    };
-}
-
+menu_btn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+})
