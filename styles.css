@@ -309,14 +309,14 @@ a:visited {
 
 /* Contact Section */
 .contact {
-    width: 100%;
+    width: 100vw;
     display: grid;
     backdrop-filter: blur(4px);
     background: linear-gradient(0deg, #5b4236, #A69C94);
 }
 
 .contact .container {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -419,6 +419,15 @@ a:visited {
         width: 60%;
         height: 40%;
         left: 19%;
+    }
+
+    .contact .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        align-items: center;
     }
 
     .footer {
