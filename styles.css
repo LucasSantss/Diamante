@@ -406,4 +406,8 @@ a:visited {
         height: 40%;
         left: 19%;
     }
+
+    .footer {
+        font-size: 12px;
+    }
 }
