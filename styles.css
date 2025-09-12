@@ -36,39 +36,43 @@ a:visited {
     opacity: 0.4;
     width: 600px;
     height: 400px;
-    background: #A69C94;
+    background: #71e9e91e;
     rotate: 180deg;
     top: -85%;
     left: 55%;
     border-radius: 42% 76% 41% 53%;
     filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.4));
-    z-index: 1;
+    z-index: -1;
+    border: 5px solid #6d331281;
 }
 
 .organic-shape-2 {
     opacity: 0.4;
     width: 700px;
     height: 700px;
-    background: #A69C94;
+    background: #71e9e91e;
     rotate: 60deg;
     bottom: 30%;
     right: 50%;
     border-radius: 118% 54% 102% 46%;
     filter: drop-shadow(0px 0px 50px rgba(255, 255, 255));
-    z-index: 1;
+    z-index: -1;
+    border: 5px solid #6d331281;
 }
 
 .organic-shape-3 {
     opacity: 0.4;
     width: 535px;
     height: 800px;
-    background: #A69C94;
+    background: #71e9e91e;
     rotate: 90deg;
     top: -20%;
     left: 50%;
     border-radius: 40% 30% 40% 60%;
     filter: drop-shadow(0px 0px 40px rgba(255, 255, 255));
-    z-index: 1;
+    z-index: -1;
+    border: 5px solid #6d331281;
+    /* A69C94 */
 }
 
 /* Layout Principal */
@@ -263,6 +267,7 @@ a:visited {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .service-card::before {
