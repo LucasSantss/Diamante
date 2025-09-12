@@ -41,9 +41,9 @@ a:visited {
     top: -85%;
     left: 55%;
     border-radius: 42% 76% 41% 53%;
-    filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.4));
+    filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
     z-index: -1;
-    border: 5px solid #6d331281;
+    border: 5px solid #ffffff1e;
 }
 
 .organic-shape-2 {
@@ -57,7 +57,7 @@ a:visited {
     border-radius: 118% 54% 102% 46%;
     filter: drop-shadow(0px 0px 50px rgba(255, 255, 255));
     z-index: -1;
-    border: 5px solid #6d331281;
+    border: 5px solid #ffffff1e;
 }
 
 .organic-shape-3 {
@@ -71,7 +71,7 @@ a:visited {
     border-radius: 40% 30% 40% 60%;
     filter: drop-shadow(0px 0px 40px rgba(255, 255, 255));
     z-index: -1;
-    border: 5px solid #6d331281;
+    border: 5px solid #ffffff1e;
     /* A69C94 */
 }
 
