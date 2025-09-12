@@ -44,6 +44,7 @@ a:visited {
     filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
     z-index: -1;
     border: 5px solid #ffffff1e;
+    outline: double;
 }
 
 .organic-shape-2 {
@@ -58,6 +59,7 @@ a:visited {
     filter: drop-shadow(0px 0px 50px rgba(255, 255, 255));
     z-index: -1;
     border: 5px solid #ffffff1e;
+    outline: double;
 }
 
 .organic-shape-3 {
@@ -72,6 +74,7 @@ a:visited {
     filter: drop-shadow(0px 0px 40px rgba(255, 255, 255));
     z-index: -1;
     border: 5px solid #ffffff1e;
+    outline: double;
     /* A69C94 */
 }
 
